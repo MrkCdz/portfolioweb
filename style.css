@@ -1,0 +1,181 @@
+:root {
+    --text-color: #1a1c20;
+    --link-color: #4a76ee;
+    --background-color: #eeeff1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+
+}
+
+/* NAVBAR */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 50px;
+    height: 80px;
+}
+
+.right {
+    display: flex;
+    flex-wrap: wrap;
+}
+    
+
+
+
+nav .left a {
+    color: var(--text-color);
+    font-size: 22px;
+    font-weight: 600px;
+    
+
+}
+
+nav .right a {
+    color: var(--text-color);
+    margin: 0px;
+}
+
+nav .right a:last-child {
+    color: var(--background-color);
+    background-color: var(--text-color);
+    padding: 4px 15px;
+    border-radius: 5px;
+    margin-top: -5px;
+}
+
+nav .right a span {
+    margin-left: 0px;
+    padding-right: 10px;
+    
+}
+
+/* Section 1: pic */
+.first-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    margin: 50px 0;
+    margin-bottom: 100px;
+    gap: 40px;
+}
+
+.first-section .text {
+    flex: 5;
+
+}
+
+.first-section .text h2 {
+    font-size: 45px;
+}
+
+.first-section .text .links {
+    margin-top: 25px;
+}
+
+.first-section .text .links a {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid var(--link-color);
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: .1s;
+}
+
+.first-section .text .links a:hover {
+    columns: var(--text-color);
+    border: 2px solid var(--text-color);
+
+}
+
+.first-section .pic {
+    flex: 2;
+    display: flex;
+    justify-content: right;
+}
+
+.first-section .pic img {
+    border-radius: 50%;
+    width: 350px;
+}
+
+
+
+
+
+/* for resizing mobile view */
+@media (max-width: 850px) {
+    /* Section1: about me */
+
+    .first-section .text h2 {
+        font-size: 35px;
+    }
+
+}
+
+@media (max-width: 740px) {
+    /* Section1: about me */
+
+    .first-section {
+        flex-direction: column-reverse;
+    }
+    .first-section .pic img {
+        width: 300px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    nav {
+        padding: 0 20px;
+
+    }
+
+    nav .right a {
+        font-size: 22px;
+    }
+
+    nav .right a:last-child {
+        color: var(--link-color);
+        background-color: transparent;
+        padding: 0;
+    }
+
+    nav .right a span {
+        display: none;
+    }
+    /* Section 1: about me */
+    .first-section {
+        padding: 0 20px;
+
+    }
+    .first-section .text h2 {
+        font-size: 30px;
+    }
+}
+
