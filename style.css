@@ -124,8 +124,16 @@ nav .right a span {
     width: 350px;
 }
 
+#works {
+    width: 60%;
+    margin: 10px;
+    transition: all 0.1s ease;
+}
 
-
+#works:hover {
+    border:#1a1c20 2px solid;
+    border-radius: 10px;
+}
 
 
 /* for resizing mobile view */
